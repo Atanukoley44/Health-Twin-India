@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Twin India | One Platform. One Health Journey.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+   <!-- Header Navigation -->
+<header>
+    <div class="container nav-wrapper">
+        <div class="logo clickable" onclick="location.href='#'">
+            <img class="logo-image" src="logo.jpeg" alt="Health Twin India logo">
+        </div>
+        
+        <!-- Mobile Toggle Button -->
+        <div class="menu-toggle" id="mobile-menu-open">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="main-nav">
+            <ul class="nav-links">
+                <!-- Close Button for Mobile -->
+                <li class="mobile-only close-wrapper">
+                    <div class="menu-close" id="mobile-menu-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#partner">Partner With Us</a></li>
+                <li><a href="#news">News</a></li>      
+                <!-- <li><a href="https://drive.google.com/drive/folders/1iQJdO6oUZsE5lXGCHlM8Z_KhCntlyNgU" target="_blank">Latest Updates</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="https://drive.google.com/drive/folders/1iQJdO6oUZsE5lXGCHlM8Z_KhCntlyNgU"><button class="btn btn-green open-upload hide-mobile">Latest Updates</button></a>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Health Twin <span class="green-txt">India</span></h1>
+                <h2 class="hero-subtitle">One Platform. One Health Journey.</h2>
+                <p class="hero-desc">Health	Twin	India	is	building	a	connected	digital healthcare	ecosystem	—	bringing	together	medicines,	diagnostic services,	healthcare	providers,	and	your	personal	health	information in	one	place.</p>
+                <div class="hero-btns">
+                    <a href="https://forms.gle/MXQB1W24fMR8EPWy7"><button class="btn btn-green open-up">Upload Prescription</button></a>
+                    <button class="btn btn-blue" onclick="scrollToSection('about')">Learn How It Works</button>
+                </div>
+                <div class="hero-badges">
+                    <div class="badge"><i class="fas fa-lock"></i> Trusted & Secure</div>
+                    <div class="badge"><i class="fas fa-user-check"></i> Patient Centric</div>
+                    <div class="badge"><i class="fas fa-universal-access"></i> Accessible Healthcare</div>
+                    <div class="badge"><i class="fas fa-rocket"></i> Future Ready</div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="Hero.png" alt="Family Health">
+                <div class="floating-plus"><i class="fas fa-plus"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray">
+        <div class="container">
+            <h2 class="section-heading text-center">About Health Twin India</h2>
+            <div class="about-flex">
+                <div class="about-main-card">
+                    <div class="logo-large"><i class="fas fa-hand-holding-medical"></i></div>
+                    <h3>Health Twin <span class="green-txt">India</span></h3>
+<p>Health Twin India is building a connected digital
+healthcare ecosystem that brings together prescriptions, medicines,
+diagnostic services, healthcare providers, and personal health
+information — making healthcare more accessible, transparent, and
+patient-centric.
+</p>   
+
+<br>            
+     <button class="btn btn-green">Know More About Us</button>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-eye"></i>
+                        <h4>Our Vision</h4>
+                        <p> To build a trusted Digital Health ecosystem where individuals can securely manage their health information & can find medicines nearby their location.
+
+</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h4>Our Mission</h4>
+                        <p>To empower individuals through a connected digital healthcare platform that brings more access to medicines & managing prescription & health reports in one platform.
+</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-heart"></i>
+                        <h4>Our Purpose</h4>
+                        <p>Better Access. Better Care. Better Health for All.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section (Updated with C and D) -->
+    <section id="categories" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading">Healthcare Categories (All-in-One Care)</h2>
+            
+            <div class="cat-group">
+                <div class="cat-header label-blue">A. CHRONIC & CONDITION CARE</div>
+                <div class="cat-grid grid-5">
+                    <div class="cat-item"><i class="fas fa-pills"></i> Diabetes Care</div>
+                    <div class="cat-item"><i class="fas fa-heartbeat"></i> Hypertension & BP</div>
+                    <div class="cat-item"><i class="fas fa-heart"></i> Heart & Cardio</div>
+                    <div class="cat-item"><i class="fas fa-lungs"></i> COPD & Respiratory</div>
+                    <div class="cat-item"><i class="fas fa-notes-medical"></i> Chronic Disease</div>
+                </div>
+            </div>
+
+            <div class="cat-group">
+                <div class="cat-header label-green">B. DAILY CARE & ESSENTIAL HEALTHCARE</div>
+                <div class="cat-grid grid-7">
+                    <div class="cat-item"><i class="fas fa-thermometer"></i> Pain & Fever</div>
+                    <div class="cat-item"><i class="fas fa-head-side-mask"></i> Cold & Allergy</div>
+                    <div class="cat-item"><i class="fas fa-bacteria"></i> Digestive Care</div>
+                    <div class="cat-item"><i class="fas fa-first-aid"></i> First Aid</div>
+                    <div class="cat-item"><i class="fas fa-spa"></i> Skin Care</div>
+                    <div class="cat-item"><i class="fas fa-tooth"></i> Oral Care</div>
+                    <div class="cat-item"><i class="fas fa-eye"></i> Eye & Ear Care</div>
+                </div>
+            </div>
+
+            <!-- New Section 3C -->
+            <div class="cat-group">
+                <div class="cat-header label-purple">C. FAMILY & SPECIAL CARE</div>
+                <div class="cat-grid grid-5">
+                    <div class="cat-item"><i class="fas fa-baby"></i> Baby & Mother</div>
+                    <div class="cat-item"><i class="fas fa-female"></i> Women's Health</div>
+                    <div class="cat-item"><i class="fas fa-blind"></i> Elderly & Home Care</div>
+                    <div class="cat-item"><i class="fas fa-male"></i> Men's Personal</div>
+                    <div class="cat-item"><i class="fas fa-capsules"></i> Vitamins & Nutritional</div>
+                </div>
+            </div>
+
+            <!-- New Section 3D -->
+            <div class="cat-group">
+                <div class="cat-header label-orange">D. MEDICINE AVAILABILITY</div>
+                <div class="cat-grid single-item-grid">
+                    <div class="cat-item special-item">
+                        <i class="fas fa-search-plus"></i>
+                        <div>
+                            <strong>Essential & Hard-To-Find Medicines</strong>
+                            <p>We’re building a network
+to help you find medicines that are hard to source — coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prescription Upload Section -->
+    <section class="section-padding bg-gray">
+        <div class="container">
+            <h2 class="section-heading"> Upload Your Prescription</h2>
+            <div class="upload-box-container">
+                <div class="upload-info">
+                    <h3>Upload Your Prescription</h3>
+                    <p>Upload your prescription and we will help you find the best healthcare solutions.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> Secure & Confidential</li>
+                        <li><i class="fas fa-check-circle"></i> Verified Healthcare Network</li>
+                        <li><i class="fas fa-check-circle"></i> Best Possible Options</li>
+                        <li><i class="fas fa-check-circle"></i> Privacy Protected</li>
+                    </ul>
+                </div>
+                <div class="upload-dropzone" id="dropzone">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & Drop your file here <br>or</p>
+                    <!-- <button class="btn btn-blue" onclick="triggerFileInput()">Choose File</button> -->
+                   <a href="https://forms.gle/MXQB1W24fMR8EPWy7"> <button class="btn btn-blue" id="chooseFileBtn">Choose File</button></a>
+                    <input type="file" id="real-file" hidden>
+                    <p class="file-support">Supported formats: JPG, PNG, PDF (Max 5MB)</p>
+                </div>
+                <div class="upload-req">
+                    <h4>You'll need to provide:</h4>
+                    <ul>
+                        <li><i class="fas fa-user"></i> Your Name</li>
+                        <li><i class="fas fa-mobile-alt"></i> Mobile Number</li>
+                        <li><i class="fas fa-list-ul"></i> Select Requirement</li>
+                        <li><i class="fas fa-upload"></i> Prescription Upload</li>
+                    </ul>
+                    <p class="privacy-note">By uploading, you agree to our <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: How it Works -->
+    <section id="how-it-works" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading text-center">How Health Twin India Works</h2>
+            <div class="works-grid">
+                <div class="work-step">
+                    <div class="step-icon"><i class="fas fa-file-medical"></i></div>
+                    <div class="step-num">01</div>
+                    <h4>Upload</h4>
+                    <p>UPLOAD Upload your prescription or share your healthcare
+requirement.</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="work-step">
+                    <div class="step-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="step-num">02</div>
+                    <h4>Connect</h4>
+                    <p>CONNECT We connect your requirement with relevant options
+from our growing network.</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="work-step">
+                    <div class="step-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <div class="step-num">03</div>
+                    <h4>Access</h4>
+                    <p>ACCESS Receive medicine or diagnostic options relevant to your
+needs.</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="work-step">
+                    <div class="step-icon"><i class="fas fa-tasks"></i></div>
+                    <div class="step-num">04</div>
+                    <h4>Manage</h4>
+                    <p>MANAGE — COMING SOON Manage your health journey
+digitally in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Coming Soon -->
+    <section class="section-padding bg-gray">
+        <div class="container">
+            <h2 class="section-heading">Coming Soon (Future Platform)</h2>
+            <div class="soon-grid">
+                <div class="soon-card">
+                    <i class="fas fa-laptop-medical"></i>
+                    <p>HTI Digital Platform</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="soon-card">
+                    <i class="fas fa-pills"></i>
+                    <p>Medicine Availability</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="soon-card">
+                    <i class="fas fa-microscope"></i>
+                    <p>Diagnostic Booking</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="soon-card">
+                    <i class="fas fa-file-invoice"></i>
+                    <p>Digital Health Records</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="soon-card">
+                    <i class="fas fa-brain"></i>
+                    <p>AI Health Insights</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="soon-card">
+                    <i class="fas fa-user-astronaut"></i>
+                    <p>Digital Health Twin</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+                <div class="soon-card">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Healthcare Dashboard</p>
+                    <span class="tag">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section id="partner" class="section-padding partner-section">
+        <div class="container partner-flex">
+            <div class="partner-content">
+                <h2>Partner With Health Twin India</h2>
+                <p>Are you a pharmacy, diagnostic centre, healthcare
+organisation, or healthcare professional interested in collaborating
+with Health Twin India?</p>
+<br>
+<br>
+                <button class="btn btn-green">Register Your Interest</button>
+            </div>
+            <div class="partner-visual">
+                <img src="partner.png" alt="Partner">
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section-padding">
+        <div class="container research-flex">
+            <div class="research-visual">
+                <img src="research.png" alt="Research">
+            </div>
+            <div class="research-content">
+                <h2>Research & Healthcare Insights</h2>
+                <p>We are committed to research, healthcare data insights and creating awareness for a healthier India.</p>
+                <ul class="bullet-list">
+                    <li>Healthcare Research</li>
+                    <li>Pharmacy Market Insights</li>
+                    <li>Patient Awareness</li>
+                    <li>Healthcare Surveys</li>
+                    <li>Publications</li>
+                </ul>
+                <button class="btn btn-blue">Explore Research</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: News / Updates -->
+    <section id="news" class="section-padding bg-gray">
+        <div class="container">
+            <div class="section-header-flex">
+                <h2 class="section-heading">Latest Updates from HTI</h2>
+                <a href="#" class="btn btn-outline">View All</a>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="news1.png" alt="News">
+                    <div class="news-body">
+                        <span class="news-tag blue">Survey</span>
+                        <h4>HTI Pharmacy Survey 2026</h4>
+                        <p>Let's build a better healthcare ecosystem together.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="news2.png" alt="News">
+                    <div class="news-body">
+                        <span class="news-tag green">Awareness</span>
+                        <h4>Healthcare Awareness Campaign</h4>
+                        <p>Creating awareness for a healthier and better India.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="news3.png" alt="News">
+                    <div class="news-body">
+                        <span class="news-tag orange">Team Update</span>
+                        <h4>Welcome to Our New Team Member</h4>
+                        <p>Strengthening our mission together.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="news4.png" alt="News">
+                    <div class="news-body">
+                        <span class="news-tag purple">Partnership</span>
+                        <h4>New Partnerships for a Better Future</h4>
+                        <p>Expanding our healthcare network.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Follow Section -->
+    <section class="section-padding text-center">
+        <div class="container">
+            <h2 class="section-heading centered">Follow Health Twin India</h2>
+            <p>Stay Connected. Stay Updated.</p>
+            <div class="social-grid">
+                <div class="social-item">
+                    <i class="fab fa-facebook fb-icon"></i>
+                    <span>Facebook</span>
+                    <a href="https://www.facebook.com/share/191LtS4AUF/" class="btn btn-outline" target="_blank">Follow Us</a>
+                </div>
+                <div class="social-item">
+                    <i class="fab fa-linkedin li-icon"></i>
+                    <span>LinkedIn</span>
+                    <a href="https://www.linkedin.com/company/health-twin-india/" class="btn btn-outline" target="_blank">Follow Us</a>
+                </div>
+                <div class="social-item">
+                    <i class="fab fa-instagram ig-icon"></i>
+                    <span>Instagram</span>
+                    <a href="https://www.instagram.com/healthtwinindiaofficial/" class="btn btn-outline" target="_blank">Follow Us</a>
+                </div>
+                <div class="social-item">
+                    <i class="fab fa-whatsapp wa-icon"></i>
+                    <span>WhatsApp</span>
+                    <a href="https://whatsapp.com/channel/0029Vb8AaaD7YScywlsxYv47" class="btn btn-outline" target="_blank">Join Now</a>
+                </div>
+            </div>
+            <div class="whatsapp-banner">
+                <div class="wa-banner-content">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>Join our WhatsApp Channel for latest updates and announcements.</p>
+                </div>
+                <a href="https://whatsapp.com/channel/0029Vb8AaaD7YScywlsxYv47" class="btn btn-green" target="_blank">Join Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 12: Important Notes -->
+    <section class="section-padding bg-blue-dark text-white">
+        <div class="container">
+            <div class="phase-flex">
+                <div class="phase-col">
+                    <h3>Important Notes (For Prescription Upload)</h3>
+                    <ul class="clean-list">
+                        <li><i class="fas fa-check"></i> Collect minimum data (Name, Email/Mobile, Consent, Purpose).</li>
+                        <li><i class="fas fa-check"></i> Mention Privacy Policy and Terms clearly.</li>
+                        <li><i class="fas fa-check"></i> Do not store prescription directly in public server/storage.</li>
+                        <li><i class="fas fa-check"></i> Use secure backend when dynamic version is ready.</li>
+                        <li><i class="fas fa-check"></i> Ensure compliance with DPDP Act, 2023 and ABDM guidelines.</li>
+                    </ul>
+                </div>
+                <div class="phase-col">
+                    <h3>Future Dynamic Features (Phase 2)</h3>
+                    <div class="phase-grid">
+                        <ul class="clean-list">
+                            <li><i class="fas fa-check"></i> User Registration & Login</li>
+                            <li><i class="fas fa-check"></i> Medicine Availability & Price</li>
+                            <li><i class="fas fa-check"></i> Order & Payment Integration</li>
+                            <li><i class="fas fa-check"></i> Diagnostic Booking</li>
+                            <li><i class="fas fa-check"></i> Digital Health Records</li>
+                        </ul>
+                        <ul class="clean-list">
+                            <li><i class="fas fa-check"></i> AI Health Analysis</li>
+                            <li><i class="fas fa-check"></i> Health Dashboard</li>
+                            <li><i class="fas fa-check"></i> Prescriptions History</li>
+                            <li><i class="fas fa-check"></i> Notifications</li>
+                            <li><i class="fas fa-check"></i> And much more...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo"><img class="logo-image" src="logo.jpeg" alt="Health Twin India logo"></div>
+                <p>One Platform. One Health Journey.</p>
+                <p class="brand-desc">Building India's most trusted and connected digital healthcare ecosystem.</p>
+                <div class="footer-social-row">
+                    <a href="https://www.facebook.com/share/191LtS4AUF/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/health-twin-india/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/healthtwinindiaofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029Vb8AaaD7YScywlsxYv47" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Data Protection</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact / Support</h4>
+                <p>We are here to help you with your healthcare journey.</p>
+                <div class="cs-badge"><i class="far fa-envelope"></i> healthtwinindia@gmail.com
+</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Health Twin India. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Upload -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Submit Prescription</h3>
+            <form id="prescriptionForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <select required>
+                    <option value="">Select Requirement</option>
+                    <option value="medicines">Medicines</option>
+                    <option value="diagnostics">Diagnostics</option>
+                </select>
+                <div class="modal-file-upload">
+                    <p>Select File to Upload</p>
+                    <input type="file" required>
+                </div>
+                <button type="submit" class="btn btn-green w-100">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
