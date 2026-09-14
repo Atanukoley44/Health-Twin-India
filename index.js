@@ -241,3 +241,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+//Employee Verification button click event
+
+const employee = document.querySelector("#Employee-v");
+
+employee.addEventListener("click", function () {
+    window.open("https://drive.google.com/drive/folders/14wT3fn8WuzFEYkNzovEofnGG3PVTJFaf", "_blank");
+});
+
+//Partner Section Register your interest button click event
+
+const ryi = document.querySelector("#ryi");
+
+ryi.addEventListener("click", function () {
+    window.open("https://form.svhrt.com/6aa6c828bef3d743c10a816d", "_blank");
+});
