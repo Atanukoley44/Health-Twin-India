@@ -237,7 +237,7 @@ footer { background: #002e52; color: white; padding: 80px 0 30px; }
     .hero-desc { margin: 0 auto 30px; }
     .hero-btns { justify-content: center; flex-direction: column; width: 100%; }
     .hero-badges { flex-wrap: wrap; justify-content: center; gap: 10px; }
-    .hero-visual img { box-shadow: 10px 10px 0px var(--primary-green); }
+    /* .hero-visual img { box-shadow: 10px 10px 0px var(--primary-green); } */
 
     /* About */
     .about-grid { grid-template-columns: 1fr; }
