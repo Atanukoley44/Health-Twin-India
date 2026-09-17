@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const employee = document.querySelector("#Employee-v");
 
 employee.addEventListener("click", function () {
-    window.open("https://drive.google.com/drive/folders/14wT3fn8WuzFEYkNzovEofnGG3PVTJFaf", "_blank");
+    window.open("https://hti-verifyhub-2026.vercel.app", "_blank");
 });
 
 //Partner Section Register your interest button click event
