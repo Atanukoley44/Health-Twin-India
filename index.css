@@ -796,3 +796,442 @@ footer { background: #002e52; color: white; padding: 80px 0 30px; }
         width: 100%;
     }
 }
+
+/* Healthcare services section */
+#health-services.health-section {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5%;
+    background: #f8fafc;
+}
+
+#health-services .health-container {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 0;
+    margin: 0 auto;
+    padding: clamp(28px, 4vw, 60px);
+    background: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 32px;
+}
+
+#health-services .health-header {
+    position: static;
+    z-index: auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    text-align: center;
+}
+
+#health-services .health-header h1 {
+    margin: 0 0 20px;
+    color: #145581;
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -1px;
+}
+
+#health-services .health-header p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #5d6875;
+    font-size: clamp(17px, 1.6vw, 23px);
+    line-height: 1.8;
+}
+
+#health-services .health-divider {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    background: #e3eaf1;
+}
+
+#health-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+#health-services .service-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 22px;
+    width: 100%;
+    min-width: 0;
+    min-height: 260px;
+    padding: 30px 24px;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    background: #f8fafc;
+    text-align: left;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#health-services .service-icon {
+    display: flex;
+    flex: 0 0 64px;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+}
+
+#health-services .service-icon svg {
+    width: 32px;
+    height: 32px;
+    stroke-width: 2;
+}
+
+#health-services .prescription-icon {
+    color: #159b64;
+    background: #e5f5ec;
+}
+
+#health-services .medicine-icon {
+    color: #145581;
+    background: #e7effb;
+}
+
+#health-services .records-icon {
+    color: #8052b0;
+    background: #f0e8fb;
+}
+
+#health-services .service-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+}
+
+#health-services .service-content strong {
+    color: #145581;
+    font-size: clamp(19px, 1.7vw, 25px);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+#health-services .service-content > span {
+    color: #536171;
+    font-size: clamp(15px, 1.25vw, 18px);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+#health-services .service-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(20, 85, 129, 0.08);
+}
+
+#health-services .service-item.selected {
+    border-color: #079b58;
+    background: #f1faf5;
+    box-shadow: 0 0 0 3px rgba(7, 155, 88, 0.08);
+}
+
+#health-services .service-check {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #079b58;
+    color: #fff;
+    font-size: 17px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.2s ease;
+}
+
+#health-services .service-item.selected .service-check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#health-services .service-item:focus-visible,
+#health-services .choose-service:focus-visible {
+    outline: 3px solid #145581;
+    outline-offset: 4px;
+}
+
+#health-services .choose-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 145px;
+    padding: 28px 24px;
+    border: 0;
+    border-radius: 22px;
+    background: #079b58;
+    color: #fff;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+#health-services .choose-service:hover {
+    background: #07864e;
+}
+
+#health-services .choose-service:active {
+    transform: scale(0.99);
+}
+
+#health-services .choose-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+#health-services .choose-title svg {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    stroke-width: 2.5;
+}
+
+#health-services .choose-subtitle {
+    font-size: clamp(15px, 1.4vw, 20px);
+    line-height: 1.6;
+    text-align: center;
+}
+
+#health-services .health-footer {
+    margin-top: 28px;
+    text-align: center;
+}
+
+#health-services .health-footer > p:first-child {
+    color: #687583;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+#health-services .health-footer a {
+    color: #145581;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#health-services .health-tagline {
+    margin-top: 22px;
+    color: #75808b;
+    font-size: clamp(16px, 1.5vw, 22px);
+    line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+    #health-services.health-section {
+        padding: 35px 4%;
+    }
+
+    #health-services .health-container {
+        padding: 35px;
+    }
+
+    #health-services .services-grid {
+        gap: 16px;
+    }
+
+    #health-services .service-item {
+        min-height: 250px;
+        padding: 24px 18px;
+        gap: 18px;
+    }
+
+    #health-services .service-icon {
+        flex-basis: 54px;
+        width: 54px;
+        height: 54px;
+    }
+
+    #health-services .service-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    #health-services .service-content strong {
+        font-size: 19px;
+    }
+
+    #health-services .service-content > span {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 800px) {
+    #health-services.health-section {
+        min-height: 100vh;
+        min-height: 100svh;
+        padding: 30px 20px;
+    }
+
+    #health-services .health-container {
+        padding: 30px 24px;
+        border-radius: 26px;
+    }
+
+    #health-services .health-header h1 {
+        font-size: 34px;
+    }
+
+    #health-services .health-header p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    #health-services .health-divider {
+        margin: 24px 0;
+    }
+
+    #health-services .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 25px;
+    }
+
+    #health-services .service-item {
+        min-height: 0;
+        padding: 22px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 18px;
+        border-radius: 18px;
+    }
+
+    #health-services .service-icon {
+        flex-basis: 52px;
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+    }
+
+    #health-services .service-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    #health-services .service-content {
+        gap: 8px;
+    }
+
+    #health-services .service-content strong {
+        font-size: 19px;
+    }
+
+    #health-services .service-content > span {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    #health-services .choose-service {
+        min-height: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+    #health-services.health-section {
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+        padding: 24px 12px;
+        align-items: flex-start;
+    }
+
+    #health-services .health-container {
+        width: 100%;
+        padding: 25px 16px;
+        border-radius: 22px;
+    }
+
+    #health-services .health-header {
+        margin-bottom: 22px;
+    }
+
+    #health-services .health-header h1 {
+        font-size: clamp(26px, 7vw, 34px);
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+        margin-bottom: 14px;
+    }
+
+    #health-services .health-header p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    #health-services .health-divider {
+        margin: 20px 0;
+    }
+
+    #health-services .service-item {
+        padding: 20px 16px;
+        gap: 14px;
+    }
+
+    #health-services .service-content strong {
+        font-size: 17px;
+    }
+
+    #health-services .service-content > span {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    #health-services .service-check {
+        top: 14px;
+        right: 14px;
+    }
+
+    #health-services .choose-service {
+        min-height: 110px;
+        padding: 20px 14px;
+        border-radius: 18px;
+    }
+
+    #health-services .choose-title {
+        gap: 10px;
+        font-size: clamp(22px, 6vw, 30px);
+    }
+
+    #health-services .choose-title svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    #health-services .choose-subtitle {
+        font-size: 14px;
+    }
+}
