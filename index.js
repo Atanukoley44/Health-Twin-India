@@ -259,3 +259,51 @@ const ryi = document.querySelector("#ryi");
 ryi.addEventListener("click", function () {
     window.open("https://form.svhrt.com/6aa6c828bef3d743c10a816d", "_blank");
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialize icons
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+
+  const serviceItems = document.querySelectorAll(".service-item");
+  const chooseButton = document.querySelector("#chooseService");
+
+  let selectedService = "";
+
+  serviceItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      serviceItems.forEach((service) => {
+        service.classList.remove("selected");
+        service.setAttribute("aria-pressed", "false");
+      });
+
+      item.classList.add("selected");
+      item.setAttribute("aria-pressed", "true");
+
+      selectedService = item.dataset.service;
+    });
+  });
+
+  chooseButton.addEventListener("click", () => {
+    if (!selectedService) {
+      alert("Please select a healthcare service first.");
+      return;
+    }
+
+    // Demo only: replace this with your request form.
+    const confirmed = confirm(
+      "Selected service: " + selectedService +
+      "\n\nContinue to the request form?"
+    );
+
+    if (confirmed) {
+      const url = new URL("request.html", window.location.href);
+      url.searchParams.set("service", selectedService);
+
+      window.location.href = url.href;
+    }
+  });
+});

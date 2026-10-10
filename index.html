@@ -58,21 +58,63 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Health Twin <span class="green-txt">India</span></h1>
-                <h2 class="hero-subtitle">One Platform. One Health Journey.</h2>
-                <p class="hero-desc">Health Twin India is building a connected digital healthcare ecosystem — bringing together medicines, diagnostic services, healthcare providers, and your personal health information in one place.</p>
-                <div class="hero-btns">
-                    <a href="https://form.svhrt.com/6aa3a12a788fe1a732c7cb47"><button class="btn btn-green">Upload Prescription</button></a>
-                    <button class="btn btn-blue" onclick="scrollToSection('about')">Learn How It Works</button>
-                </div>
-                <div class="hero-badges">
-                    <div class="badge"><i class="fas fa-lock"></i> Trusted & Secure</div>
-                    <div class="badge"><i class="fas fa-user-check"></i> Patient Centric</div>
-                    <div class="badge"><i class="fas fa-universal-access"></i> Accessible Healthcare</div>
-                    <div class="badge"><i class="fas fa-rocket"></i> Future Ready</div>
-                </div>
-            </div>
+            <div class="health-container">
+
+    <div class="brand"><span class="brand-highlight">HEALTH TWIN</span> INDIA</div>
+
+    <section class="hero">
+      <h1>
+        Your Healthcare Journey,<br />
+        Simplified.
+      </h1>
+
+      <p class="hero-description">
+        Find medicines, get prescription support, and
+        bring your medical records together—all through
+        one connected platform.
+      </p>
+    </section>
+
+    <section class="services" aria-label="Healthcare services">
+
+      <button class="service-card prescription"
+              data-service="Prescription Help"
+              type="button">
+        <i data-lucide="clipboard-check"></i>
+        <span>Prescription<br />Help</span>
+      </button>
+
+      <button class="service-card medicines"
+              data-service="Find Medicines"
+              type="button">
+        <i data-lucide="pill"></i>
+        <span>Find Medicines</span>
+      </button>
+
+      <button class="service-card records"
+              data-service="Digital Health Records"
+              type="button">
+        <i data-lucide="folder-heart"></i>
+        <span>Digital Health<br />Records</span>
+      </button>
+
+    </section>
+
+    <button class="choose-button" id="chooseService" type="button">
+      <span class="button-title">
+        Choose Your Service
+        <i data-lucide="arrow-right"></i>
+      </span>
+      <span class="button-subtitle">
+        Select a service and submit your request
+      </span>
+    </button>
+
+    <p class="footer-text">
+      One Platform. One Health Journey.
+    </p>
+
+  </div>
             <div class="hero-visual">
                 <img src="./assets/Hero.png" alt="Family Health">
                 <!-- <div class="floating-plus"><i class="fas fa-plus"></i></div> -->
@@ -87,8 +129,8 @@
             <div class="about-flex">
                 <div class="about-main-card">
                     <div class="logo-large"><i class="fas fa-hand-holding-medical"></i></div>
-                    <h3>Health Twin <span class="green-txt">India</span></h3>
-                    <p>Health Twin India is building a connected digital healthcare ecosystem that brings together prescriptions, medicines, diagnostic services, healthcare providers, and personal health information — making healthcare more accessible, transparent, and patient-centric.</p>   
+                    <h3 class="about-htt">Health Twin <span class="green-txt">India</span></h3>
+                    <p>Health Twin India is building a connected digital healthcare ecosystem that brings together prescription support, medicine availability and price comparison, and digital health records—all in one place, making healthcare simpler and more accessible.</p>   
                     <br>            
                     <button class="btn btn-green">Know More About Us</button>
                 </div>
@@ -168,7 +210,7 @@
     </section>
 
     <!-- Prescription Upload Section -->
-    <section class="section-padding bg-gray">
+    <!-- <section class="section-padding bg-gray">
         <div class="container">
             <h2 class="section-heading"> Upload Your Prescription</h2>
             <div class="upload-box-container">
@@ -201,7 +243,120 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+
+<section id="health-services" class="health-section">
+  <div class="health-container">
+
+    <header class="health-header">
+      <h1>Your Healthcare, All in One Place</h1>
+      <p>
+        Choose the service you need and submit your request
+        through Health Twin India.
+      </p>
+    </header>
+
+    <div class="health-divider"></div>
+
+    <div class="services-grid">
+
+      <!-- Prescription Clarification -->
+      <button class="service-item" type="button"
+              data-service="Prescription Clarification"
+              aria-pressed="false">
+
+        <span class="service-icon prescription-icon">
+          <i data-lucide="clipboard-list"></i>
+        </span>
+
+        <span class="service-content">
+          <strong>Prescription Clarification</strong>
+          <span>
+            Have questions about your prescription? Submit your
+            query to seek appropriate professional guidance.
+            A qualified healthcare professional can help clarify
+            prescription instructions and answer relevant questions.
+          </span>
+        </span>
+
+        <span class="service-check" aria-hidden="true">✓</span>
+      </button>
+
+      <!-- Find Your Medicine -->
+      <button class="service-item" type="button"
+              data-service="Find Your Medicine"
+              aria-pressed="false">
+
+        <span class="service-icon medicine-icon">
+          <i data-lucide="pill"></i>
+        </span>
+
+        <span class="service-content">
+          <strong>Find Your Medicine</strong>
+          <span>
+            Tell us which medicine you need and your location
+            to enquire about availability and compare prices.
+            Medicine availability and prices must be verified
+            before any purchase or order is confirmed.
+          </span>
+        </span>
+
+        <span class="service-check" aria-hidden="true">✓</span>
+      </button>
+
+      <!-- Digital Health Records -->
+      <button class="service-item" type="button"
+              data-service="Digital Health Records"
+              aria-pressed="false">
+
+        <span class="service-icon records-icon">
+          <i data-lucide="folder-heart"></i>
+        </span>
+
+        <span class="service-content">
+          <strong>Digital Health Records</strong>
+          <span>
+            Register your interest in creating a digital health
+            profile to organize your medical history, prescriptions,
+            diagnostic reports, and discharge summaries.
+            Share only relevant information with appropriate consent.
+          </span>
+        </span>
+
+        <span class="service-check" aria-hidden="true">✓</span>
+      </button>
+
+    </div>
+
+    <button class="choose-service" id="chooseService" type="button">
+      <span class="choose-title">
+        Choose Your Service
+        <i data-lucide="arrow-right"></i>
+      </span>
+
+      <span class="choose-subtitle">
+        Select a service and submit your request
+      </span>
+    </button>
+
+    <footer class="health-footer">
+      <p>
+        Please provide only the information relevant to your request.
+        Read our
+        <a href="privacy-policy.html">Privacy Policy</a>
+        before submitting personal or medical information.
+      </p>
+
+      <p class="health-tagline">
+        One Platform. One Health Journey.
+      </p>
+    </footer>
+
+  </div>
+</section>
+
+
 
     <!-- Section 5: How it Works -->
     <section id="how-it-works" class="section-padding">
@@ -264,21 +419,8 @@
                     <p>Digital Health Records</p>
                     <span class="tag">Coming Soon</span>
                 </div>
-                <div class="soon-card">
-                    <i class="fas fa-brain"></i>
-                    <p>AI Health Insights</p>
-                    <span class="tag">Coming Soon</span>
-                </div>
-                <div class="soon-card">
-                    <i class="fas fa-user-astronaut"></i>
-                    <p>Digital Health Twin</p>
-                    <span class="tag">Coming Soon</span>
-                </div>
-                <div class="soon-card">
-                    <i class="fas fa-chart-line"></i>
-                    <p>Healthcare Dashboard</p>
-                    <span class="tag">Coming Soon</span>
-                </div>
+               
+                
             </div>
         </div>
     </section>
@@ -408,16 +550,19 @@
     <section class="section-padding bg-blue-dark text-white">
         <div class="container">
             <div class="phase-flex">
-                <div class="phase-col">
-                    <h3>Important Notes (For Prescription Upload)</h3>
-                    <ul class="clean-list">
-                        <li><i class="fas fa-check"></i> Collect minimum data (Name, Email/Mobile, Consent, Purpose).</li>
-                        <li><i class="fas fa-check"></i> Mention Privacy Policy and Terms clearly.</li>
-                        <li><i class="fas fa-check"></i> Do not store prescription directly in public server/storage.</li>
-                        <li><i class="fas fa-check"></i> Use secure backend when dynamic version is ready.</li>
-                        <li><i class="fas fa-check"></i> Ensure compliance with DPDP Act, 2023 and ABDM guidelines.</li>
-                    </ul>
-                </div>
+            
+<div class="phase-col">
+    <h3>Important Notes for Healthcare Service Requests</h3>
+    <ul class="clean-list">
+        <li><i class="fas fa-check"></i> Provide only the minimum information required for your selected service.</li>
+        <li><i class="fas fa-check"></i> Select the appropriate service: Prescription Clarification, Find Your Medicine, or Digital Health Records.</li>
+        <li><i class="fas fa-check"></i> Upload prescriptions or medical documents only when relevant to your request.</li>
+        <li><i class="fas fa-check"></i> Do not upload emergency medical requests. Seek immediate medical assistance when needed.</li>
+        <li><i class="fas fa-check"></i> Your health information must be handled in accordance with the applicable privacy policy, consent requirements, and data protection obligations.</li>
+        <li><i class="fas fa-check"></i> Prescription-related decisions and medication changes must be guided by a qualified healthcare professional.</li>
+        <li><i class="fas fa-check"></i> Medicine availability, prices, and service responses are subject to verification and confirmation.</li>
+    </ul>
+</div>
                 <div class="phase-col">
                     <h3>Future Dynamic Features (Phase 2)</h3>
                     <div class="phase-grid">
@@ -477,6 +622,12 @@
                 <h4>Contact / Support</h4>
                 <p>We are here to help you with your healthcare journey.</p>
                 <div class="cs-badge"><i class="far fa-envelope"></i> healthtwinindia@gmail.com</div>
+                
+<div class="contact">
+  <i class="phone">☎</i>
+  <a href="tel:+919242059087">+91 92420 59087</a>
+</div>
+
             </div>
         </div>
         <div class="footer-bottom">

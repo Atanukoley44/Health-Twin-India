@@ -37,17 +37,17 @@ header { background: white; border-bottom: 1px solid var(--border); position: st
 
 /* Hero */
 .hero { padding: 100px 0; background: radial-gradient(circle at top right, #eef7f2 0%, #ffffff 60%); }
-.hero-container { display: flex; align-items: center; gap: 40px; }
-.hero-content { flex: 1; }
-.hero-title { font-size: 48px; color: var(--dark-blue); margin-bottom: 10px; font-weight: 700; }
-.hero-subtitle { font-size: 24px; margin-bottom: 20px; font-weight: 600; color: #444; }
-.hero-desc { font-size: 16px; color: var(--text-muted); margin-bottom: 35px; max-width: 550px; }
-.hero-btns { display: flex; gap: 15px; margin-bottom: 40px; }
-.hero-badges { display: flex; gap: 20px; border-top: 1px solid #eee; padding-top: 25px; }
+.hero-container { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+.hero-content { flex: 1; max-width: 560px; }
+.hero-title { font-size: clamp(2.6rem, 4vw, 3.8rem); line-height: 1.1; color: var(--dark-blue); margin-bottom: 12px; font-weight: 700; }
+.hero-subtitle { font-size: clamp(1.2rem, 2vw, 1.8rem); margin-bottom: 18px; font-weight: 600; color: #444; }
+.hero-desc { font-size: 16px; color: var(--text-muted); margin-bottom: 35px; max-width: 520px; }
+.hero-btns { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 34px; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 14px 20px; border-top: 1px solid #eee; padding-top: 25px; }
 .badge { font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
 .badge i { color: var(--primary-green); font-size: 16px; }
-.hero-visual { flex: 1; position: relative; }
-.hero-visual img { width: 100%; border-radius: 30px; box-shadow: 20px 20px 0px var(--primary-white); }
+.hero-visual { flex: 1; position: relative; display: flex; justify-content: center; align-items: center; }
+.hero-visual img { width: min(100%, 560px); height: auto; border-radius: 30px; box-shadow: 0 28px 50px rgba(0, 0, 0, 0.12); }
 .floating-plus { position: absolute; top: 20px; right: 20px; background: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; color: var(--primary-green); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
 /* Section Headings */
@@ -205,11 +205,12 @@ footer { background: #002e52; color: white; padding: 80px 0 30px; }
     .phase-grid { grid-template-columns: 1fr; }
 }
 
-/* ============================================================
+/* ================================================
    MOBILE RESPONSIVENESS & REFINEMENTS
-   ============================================================ */
+   ================================================ */
 
 /* Tablet & Smaller Desktop (1024px) */
+
 @media (max-width: 1024px) {
     .container { padding: 0 30px; }
     
@@ -223,6 +224,7 @@ footer { background: #002e52; color: white; padding: 80px 0 30px; }
     
     .news-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
 
 /* Tablets & Large Phones (768px) */
 @media (max-width: 768px) {
