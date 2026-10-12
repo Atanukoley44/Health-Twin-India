@@ -45,9 +45,7 @@
 
         <!-- 4. Upload Button (Right on Desktop, Scrolling below on Mobile) -->
         <div class="scrolling-button-container">
-            <a href="https://drive.google.com/drive/folders/1iQJdO6oUZsE5lXGCHlM8Z_KhCntlyNgU" class="header-upload-link">
-                <button class="btn btn-green header-upload-btn">Latest Updates</button>
-            </a>
+            <button type="button" id="latest-updates" class="btn btn-green header-upload-link header-upload-btn">Latest Updates</button>
         </div>
     </div>
 </header>
@@ -77,36 +75,30 @@
 
     <section class="services" aria-label="Healthcare services">
 
-      <button class="service-card prescription"
-              data-service="Prescription Help"
-              type="button">
+      <div class="service-card prescription">
         <i data-lucide="clipboard-check"></i>
         <span>Prescription<br />Help</span>
-      </button>
+      </div>
 
-      <button class="service-card medicines"
-              data-service="Find Medicines"
-              type="button">
+      <div class="service-card medicines">
         <i data-lucide="pill"></i>
         <span>Find Medicines</span>
-      </button>
+      </div>
 
-      <button class="service-card records"
-              data-service="Digital Health Records"
-              type="button">
+      <div class="service-card records">
         <i data-lucide="folder-heart"></i>
         <span>Digital Health<br />Records</span>
-      </button>
+      </div>
 
     </section>
 
-    <button class="choose-button" id="chooseService" type="button">
+    <button type="button" class="choose-button" id="choose-service">
       <span class="button-title">
         Choose Your Service
         <i data-lucide="arrow-right"></i>
       </span>
       <span class="button-subtitle">
-        Select a service and submit your request
+        Continue to the customer registration form
       </span>
     </button>
 
@@ -129,7 +121,7 @@
             <div class="about-flex">
                 <div class="about-main-card">
                     <div class="logo-large"><i class="fas fa-hand-holding-medical"></i></div>
-                    <h3 class="about-htt">Health Twin <span class="green-txt">India</span></h3>
+                    <h3 class="about-htt"><span class="about-name">Health Twin</span> <span class="green-txt">India</span></h3>
                     <p>Health Twin India is building a connected digital healthcare ecosystem that brings together prescription support, medicine availability and price comparison, and digital health records—all in one place, making healthcare simpler and more accessible.</p>   
                     <br>            
                     <button class="btn btn-green">Know More About Us</button>
@@ -160,7 +152,20 @@
         <div class="container">
             <h2 class="section-heading">Healthcare Categories (All-in-One Care)</h2>
             <div class="cat-group">
-                <div class="cat-header label-blue">A. CHRONIC & CONDITION CARE</div>
+                <div class="cat-header label-orange">A. MEDICINE AVAILABILITY</div>
+                <div class="cat-grid single-item-grid">
+                    <div class="cat-item special-item">
+                        <i class="fas fa-search-plus"></i>
+                        <div>
+                            <strong>Essential & Hard-To-Find Medicines</strong>
+                            <p>We’re building a network to help you find medicines that are hard to source — coming soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat-group">
+                <div class="cat-header label-blue">B. CHRONIC & CONDITION CARE</div>
                 <div class="cat-grid grid-5">
                     <div class="cat-item"><i class="fas fa-pills"></i> Diabetes Care</div>
                     <div class="cat-item"><i class="fas fa-heartbeat"></i> Hypertension & BP</div>
@@ -171,7 +176,7 @@
             </div>
 
             <div class="cat-group">
-                <div class="cat-header label-green">B. DAILY CARE & ESSENTIAL HEALTHCARE</div>
+                <div class="cat-header label-green">C. DAILY CARE & ESSENTIAL HEALTHCARE</div>
                 <div class="cat-grid grid-7">
                     <div class="cat-item"><i class="fas fa-thermometer"></i> Pain & Fever</div>
                     <div class="cat-item"><i class="fas fa-head-side-mask"></i> Cold & Allergy</div>
@@ -184,26 +189,13 @@
             </div>
 
             <div class="cat-group">
-                <div class="cat-header label-purple">C. FAMILY & SPECIAL CARE</div>
+                <div class="cat-header label-purple">D. FAMILY & SPECIAL CARE</div>
                 <div class="cat-grid grid-5">
                     <div class="cat-item"><i class="fas fa-baby"></i> Baby & Mother</div>
                     <div class="cat-item"><i class="fas fa-female"></i> Women's Health</div>
                     <div class="cat-item"><i class="fas fa-blind"></i> Elderly & Home Care</div>
                     <div class="cat-item"><i class="fas fa-male"></i> Men's Personal</div>
                     <div class="cat-item"><i class="fas fa-capsules"></i> Vitamins & Nutritional</div>
-                </div>
-            </div>
-
-            <div class="cat-group">
-                <div class="cat-header label-orange">D. MEDICINE AVAILABILITY</div>
-                <div class="cat-grid single-item-grid">
-                    <div class="cat-item special-item">
-                        <i class="fas fa-search-plus"></i>
-                        <div>
-                            <strong>Essential & Hard-To-Find Medicines</strong>
-                            <p>We’re building a network to help you find medicines that are hard to source — coming soon.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -249,27 +241,20 @@
 <section id="health-services" class="health-section">
   <div class="health-container">
 
-    <header class="health-header">
+    <div class="health-header">
       <h1>Your Healthcare, All in One Place</h1>
       <p>
         Choose the service you need and submit your request
         through Health Twin India.
       </p>
-    </header>
+    </div>
 
     <div class="health-divider"></div>
 
     <div class="services-grid">
 
       <!-- Prescription Clarification -->
-      <button class="service-item" type="button"
-              data-service="Prescription Clarification"
-              aria-pressed="false">
-
-        <span class="service-icon prescription-icon">
-          <i data-lucide="clipboard-list"></i>
-        </span>
-
+      <div class="service-item">
         <span class="service-content">
           <strong>Prescription Clarification</strong>
           <span>
@@ -280,18 +265,10 @@
           </span>
         </span>
 
-        <span class="service-check" aria-hidden="true">✓</span>
-      </button>
+      </div>
 
       <!-- Find Your Medicine -->
-      <button class="service-item" type="button"
-              data-service="Find Your Medicine"
-              aria-pressed="false">
-
-        <span class="service-icon medicine-icon">
-          <i data-lucide="pill"></i>
-        </span>
-
+      <div class="service-item">
         <span class="service-content">
           <strong>Find Your Medicine</strong>
           <span>
@@ -302,18 +279,10 @@
           </span>
         </span>
 
-        <span class="service-check" aria-hidden="true">✓</span>
-      </button>
+      </div>
 
       <!-- Digital Health Records -->
-      <button class="service-item" type="button"
-              data-service="Digital Health Records"
-              aria-pressed="false">
-
-        <span class="service-icon records-icon">
-          <i data-lucide="folder-heart"></i>
-        </span>
-
+      <div class="service-item">
         <span class="service-content">
           <strong>Digital Health Records</strong>
           <span>
@@ -324,21 +293,19 @@
           </span>
         </span>
 
-        <span class="service-check" aria-hidden="true">✓</span>
-      </button>
+      </div>
 
     </div>
-
-    <button class="choose-service" id="chooseService" type="button">
+    <a class="choose-service" href="https://surveyheart.com/form/6aa3a12a788fe1a732c7cb47">
       <span class="choose-title">
         Choose Your Service
         <i data-lucide="arrow-right"></i>
       </span>
-
       <span class="choose-subtitle">
-        Select a service and submit your request
+      <span class="choose-subtitle">
       </span>
-    </button>
+      </span>
+    </a>
 
     <footer class="health-footer">
       <p>
@@ -625,7 +592,7 @@
                 
 <div class="contact">
   <i class="phone">☎</i>
-  <a href="tel:+919242059087">+91 92420 59087</a>
+  <a href="tel:+919242059087" id="phone">+91 92420 59087</a>
 </div>
 
             </div>

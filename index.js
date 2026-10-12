@@ -121,45 +121,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const latestUpdatesBtn = document.getElementById('latest-updates');
+    if (latestUpdatesBtn) {
+        latestUpdatesBtn.addEventListener('click', () => {
+            window.location.assign('https://drive.google.com/drive/folders/1iQJdO6oUZsE5lXGCHlM8Z_KhCntlyNgU');
+        });
+    }
+
+    const chooseServiceBtn = document.getElementById('choose-service');
+    if (chooseServiceBtn) {
+        chooseServiceBtn.addEventListener('click', () => {
+            window.location.assign('https://surveyheart.com/form/6aa3a12a788fe1a732c7cb47');
+        });
+    }
+
     if (window.lucide) {
         window.lucide.createIcons();
     }
 
-    const serviceItems = document.querySelectorAll('.service-item');
-    const chooseButton = document.getElementById('chooseService');
-    let selectedService = '';
-
-    serviceItems.forEach((item) => {
-        item.addEventListener('click', () => {
-            serviceItems.forEach((service) => {
-                service.classList.remove('selected');
-                service.setAttribute('aria-pressed', 'false');
-            });
-
-            item.classList.add('selected');
-            item.setAttribute('aria-pressed', 'true');
-            selectedService = item.dataset.service || '';
-        });
-    });
-
-    if (chooseButton) {
-        chooseButton.addEventListener('click', () => {
-            if (!selectedService) {
-                alert('Please select a healthcare service first.');
-                return;
-            }
-
-            const confirmed = confirm(
-                'Selected service: ' + selectedService + '\n\nContinue to the request form?'
-            );
-
-            if (confirmed) {
-                const url = new URL('request.html', window.location.href);
-                url.searchParams.set('service', selectedService);
-                window.location.href = url.href;
-            }
-        });
-    }
 });
 
 function triggerFileInput() {
